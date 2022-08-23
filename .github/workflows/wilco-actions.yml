@@ -32,6 +32,8 @@ jobs:
         uses: trywilco/actions@shem
         with:
           owner: ${{ github.repository_owner }}
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost/anythink-market
   Lint:
     runs-on: ubuntu-latest
     timeout-minutes: 10
